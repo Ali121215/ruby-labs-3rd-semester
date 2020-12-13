@@ -1,0 +1,19 @@
+<h1>Lab#index</h1>
+<p>Find me in app/views/lab/index.html.erb</p>
+<a href="/results">XML results</a>
+<a href="/users">XML users</a>
+<br>
+<h3>Вы вошли как: <%= @user.name %>! <a href="/logout">Выйти</a></h3>
+<br>
+<%= form_tag "/create", method: "get" do %>
+    <table>
+        <tr>
+            <td>Введите n</td>
+            <td><%= text_field_tag :n %></td>
+        </tr>
+        <tr>
+            <td><%= submit_tag "Найти" %></td>
+            <td></td>
+        </tr>
+    </table>
+<% end %>

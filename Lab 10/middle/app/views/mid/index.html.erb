@@ -1,0 +1,29 @@
+<h1>Lab#index</h1>
+<p>Find me in app/views/middle/index.html.erb</p>
+
+<%= form_with(url: "/create", method: "get", id: "add") do %>
+    <table>
+        <tr>
+            <td>Введите n</td>
+            <td><%= text_field_tag :n %></td>
+        </tr>
+        <tr>
+            <td>Выберите is_transformed_on_server</td>
+            <td>
+                Сервер<%= radio_button_tag(:transformer, "server", :checked) %>
+                Клиент<%= radio_button_tag(:transformer, "client") %>
+            </td>
+        </tr>
+        <tr>
+            <td><%= submit_tag "Найти", id: "push" %></td>
+            <td></td>
+        </tr>
+    </table>
+<% end %>
+<br>
+<table id="result" border="1">
+    <tr>
+        <td>Номер строки</td>
+        <td>Число</td>
+    </tr>
+</table>
