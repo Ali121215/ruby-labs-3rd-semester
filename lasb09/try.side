@@ -1,0 +1,77 @@
+{
+  "id": "0173b52a-72dc-46f8-876c-04beaf775d52",
+  "version": "2.0",
+  "name": "try",
+  "url": "http://localhost:3000/",
+  "tests": [{
+    "id": "59c36b03-c212-4c77-8ebf-57148cb59786",
+    "name": "Untitled",
+    "commands": [{
+      "id": "522f9de6-1663-4478-8570-103e843a206f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cab594cb-cbc9-401f-a39f-3d9f85b1730f",
+      "comment": "",
+      "command": "type",
+      "target": "id=n",
+      "targets": [],
+      "value": "50"
+    }, {
+      "id": "120fe915-f188-4ffe-b872-3d84f19a9dc8",
+      "comment": "",
+      "command": "click",
+      "target": "id=click",
+      "targets": [
+        ["id=click", "id"],
+        ["name=commit", "name"],
+        ["css=#click", "css:finder"],
+        ["xpath=//input[@id='click']", "xpath:attributes"],
+        ["xpath=//form[@id='add']/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38868fd2-741f-4410-8f87-30bc3ff4caca",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=item№1",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "c329948b-55dc-48ef-a003-a09d45a6f2c5",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=item№2",
+      "targets": [],
+      "value": "5"
+    }, {
+      "id": "4406d247-8c13-467e-b273-183465b835a2",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=item№3",
+      "targets": [],
+      "value": "6"
+    }, {
+      "id": "b9cd00c4-ff42-4470-a0f4-c700d141fc74",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=item№4",
+      "targets": [],
+      "value": "25"
+    }]
+  }],
+  "suites": [{
+    "id": "cd41b149-927e-406b-a665-334129251714",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["59c36b03-c212-4c77-8ebf-57148cb59786"]
+  }],
+  "urls": ["localhost:3000", "https://localhost:3000/", "http://localhost:3000/"],
+  "plugins": []
+}

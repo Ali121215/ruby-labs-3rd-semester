@@ -52,6 +52,7 @@ function showResult(data)
 
         cells[0].innerText = i;
         cells[1].innerText = el;
+        cells[1].id = "item№" + i;
 
         cells.forEach(function(value) {
             tr.appendChild(value);
